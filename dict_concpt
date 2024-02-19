@@ -1,0 +1,91 @@
+dictionary
+
+
+creation_dict = {"Name": "David", "age":27}
+
+inbult to create dict 
+dict() ---> no quotes for the keys
+
+eg: dict(name:"vijay", age:27)
+
+accessing the values
+
+value = creation_dict["Name"]
+
+Adding the key
+
+creation_dict["emai"] = "david@gmail.com"
+
+if we can add the value for the same key it overrides the value
+
+deleting the key
+
+del creation_dict["Name"]
+
+creation_dict.pop("age")
+
+creation_dict.popitem() --- removes last item
+
+TO check if keys is present or not
+
+using in  if "name" in creation_dict like this
+
+try and except also check if key is present or not
+
+
+loop through dictionary
+
+for key in creation_dict.keys():
+    print key
+
+for values in creation_dict.values():
+    print values 
+
+accessing both 
+
+for key, value in creation_dict.items():
+    print (key, value)
+
+
+copying dict
+
+mydict_cpy = mydict --- reflects in the original dict if we make any changes in the copied dict. because same
+dict pointing the same memory location
+
+
+
+if we want to copy the dict if we made any change in the copied dict it should not reflect means we can use
+copy() method
+mydict_cpy = dict(mydict)
+
+
+updating the values in dict
+
+my_dict = {"Name":"David"}
+my_dict_2 = {"Name":"Vijay", "age": 27, "email": "davidvijay273@gmail.com"}
+
+my_dict.update(my_dict_2 )
+
+output will be updated values of  my_dict_2 
+
+
+tuple as a key
+
+my_tuple = (8,7)
+
+mydict = {my_tuple: 15}
+
+if we print {(8, 7): 15}
+
+we cant set a list a key because list is mutable it'll change once its created for that reason
+
+
+
+
+
+
+
+
+
+
+
