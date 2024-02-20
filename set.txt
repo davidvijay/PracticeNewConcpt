@@ -1,0 +1,155 @@
+sets not allow duplicates
+
+creation
+myset = {1,2,3,1}
+removed duplicates
+
+set method
+
+myset = ("Hello")
+
+Does not follow order if we print
+
+emptyset
+
+myset = {} considered as a dictionary
+
+myset.add(1)
+myset.add(2)
+
+removing
+myset.remove(2)
+
+discard
+myset.discar(4) it does not throw error if the set is not having
+
+myset.clear() -- Empty the set
+myset.pop() --- removes arbitrary value like random value
+
+iteration
+
+for i in myset:
+ print(i)
+
+check inside a set
+
+if 1 in myset:
+ print("yes")
+
+odds = {1,3,5,7,9}
+evens = {0,2,4,6,8}
+primes = {2,3,5,7}
+
+union 
+
+ u = odds.union(evens) ---- pick all the values from both sets and ignores duplicates
+
+intersection
+ i = odds.intersection(evens) ---- pick all the common values from the both sets
+
+difference ---- return all the set which will not available in the second set
+
+setA = {1, 2, 3, 4, 5, 6, 7,8, 9}
+setB = {1,2,3,10,11,12}
+
+eg:  diff = setA.difference(setB) -----o/p 4,5,6,7,8,9
+
+
+symmetric_difference-- leaves common element takes rest of all
+
+setb.symmetric_difference(seta)
+eg: o/p 4,5,6,7,8,9,10,11,12
+
+these union, intersection, symmetric_differnece returns new set as output
+
+updating the existing set
+
+seta.update(setb)----o/p 1, 2, 3, 4, 5, 6, 7,8, 9,10,11,12 neglected the duplicates
+
+intersection_update
+
+seta.intersection_update(setb) --- update only common values present in both the sets
+
+o/p: 1,2,3
+
+difference_update
+
+seta.difference_update(setb) ----remove common values from setb 
+
+o/p: 4,5,6,7,8,9
+
+
+symmetric_difference_update
+
+seta.symmetric_difference_update(setb) --leaves common element takes rest of all
+
+eg: o/p 4,5,6,7,8,9,10,11,12
+
+setA = {1, 2, 3, 4, 5, 6}
+setB = {1,2,3}
+
+
+subset --- all the elements need to present with the compared set
+seta.issubset(setb) o/p return false
+setb.issubset(seta) o/p return true
+
+superset opposite to subset
+seta.issubset(setb) o/p return true
+setb.issubset(seta) o/p return false
+
+isdisjoint -- no same element present in the compared set
+
+setc= {7,8}
+
+eg: seta.isdisjoint(setb)
+o/p false
+
+eg: seta.isdisjoint(setc)
+o/p true
+
+copying two sets
+
+same as list and dict it will reflect if we change any modification in the copied set using = operator
+
+copiedset = seta.copy()
+copiedset = set(seta)
+
+frozenset -- collection datatype values cant be change
+
+a = frozenset([1,2,3,4])
+
+a.add(2) error
+a.remove(1) error
+
+union, intersection, difference will work
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
