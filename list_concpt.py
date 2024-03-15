@@ -15,10 +15,16 @@
 mylist = ["1", 2, True]
 mylist_2 = mylist[:]
 
-print(mylist)
-print(mylist_2)
+#copying list
+# print(mylist)
+# print(mylist_2)
 
-mylist.insert(1, "orange")
+# mylist.insert(1, "orange")
 
-print(mylist)
-print(mylist_2)
+# print(mylist)
+# print(mylist_2)
+
+#
+
+
+

@@ -1,0 +1,86 @@
+itertools module is a datatype which will used in for loop having advanced features
+
+from itertools import product
+
+a = [1,2]
+b = [3,4]
+
+prod = product(a,b)
+o/p: print(list(prod)
+[(1,3), (1,4), (2,3), (2,4)]
+
+prod = product(a,b, repeat=2) if we mention like this then the o/p will be
+two product values
+
+from itertools import permutations
+
+a = [1,2,3]
+perm = permutations(a)
+
+print(list(perm))
+o/p print all the possibilities of order
+
+perm = permutations(a) ---->combinations of 2 and its order
+
+
+from itertools import combinations, combinations_with_replacement
+
+a = [1,2,3,4]
+comb = combionations(a)
+print(list(comb))
+comb _wr = 
+
+
+from itertools import accumulate --->default accumulate the sums
+a = [1,2,3,4]
+acc = accumulate(a)
+print(list(acc))
+o/p: 1, 3, 6, 10
+
+acc = accumulate(a, func = operator.mul)---->accumulate the multiply
+acc = accumulate(a, func = max)----[1,2,5,3,4]---[1,2,5,5,5]
+
+
+
+from itertools import groupby
+
+def smaller_than_3(x):
+return x<3
+
+a = [1,2,3,4]
+group_obj = groupby(a, key=smaller_than_3)
+for key, value in group_obj:
+ print(key, list(value))
+
+infinite iterators
+from itertools import count, cycle, repeat
+
+for i in count(10):
+print(i)-print infinite times increased by 1
+
+
+a = [1,2,3]
+for i in cycle(a):
+print(i)----1,2,3,1,2,3
+
+for i in repeat(1)
+print(i) infinite times
+
+
+for i in repeat(1,4)
+print(i) print 4 times
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

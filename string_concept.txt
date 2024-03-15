@@ -1,0 +1,40 @@
+string creation
+
+my_string = "Hi" or 'hi'
+
+for multiline 
+
+my_string = """Hi
+
+My name is vijay """
+
+it'll print after next line
+
+my_string = "Hi \  it'll says thatg string is not ended
+
+accessing
+
+my_string[0] is i
+
+we can't modify the string because its immutable
+
+funtions
+
+my_string.upper()
+my_string.lower()
+
+.startswith()
+.endswith()
+.split() ---> creates an list if we dont specify anything it will consider space as a value
+.replace()
+
+in is used to check if the value is present or not
+
+''.join() is used to convert collection as a string
+if we need space in between we'll use ' '.join()
+like this
+
+
+
+
+
