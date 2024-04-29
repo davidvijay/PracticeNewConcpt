@@ -1,0 +1,53 @@
+test_list = [1,2,3,4,5]
+test_list_2 = (1,2,3,4,5)
+output_list = []
+
+for x in test_list:
+    output_list.append(x*2)
+print(output_list) # [2, 4, 6, 8, 10]
+
+
+def doubles(x):
+    return x*2
+    
+output_list = list(map(doubles, test_list)) # [2, 4, 6, 8, 10]
+
+output_list = list(map(lambda X: X *2, test_list))  # [2, 4, 6, 8, 10]
+
+# List comphrension
+
+output_list = [i*2 for i in test_list ] #output_list 
+
+
+
+
+import time
+
+start_time = time.time()
+output_list = [i*2 for i in test_list_2 ]
+
+# Your code to be measured for execution time goes here
+
+end_time = time.time()
+execution_time = end_time - start_time
+
+print("Execution time:", execution_time, "seconds")
+
+
+# Filter
+
+test_list = [1,2,3,4,5]
+
+for i in test_list_2:
+    if (i%2==0):
+        output_list.append(i)
+        
+print(output_list)
+
+
+output_list = list(filter(lambda X: X*2, test_list))
+
+output_list = list(map(lambda X: X*2, test_list))
+
+from functools import reduce
+output_list = reduce(lambda a, b : a+b,test_list)
